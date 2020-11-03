@@ -3,18 +3,36 @@ package classes;
 import java.util.ArrayList;
 
 public class User {
-    String Name;
-    MyCollection myCollection;
+    private String Name;
+    private MyCollection myCollection;
 
     public User(String name) {
         Name = name;
 
-        ArrayList<Track> myCollectionTracks = new ArrayList<Track>();
+        ArrayList<SoundContent> myCollectionTracks = new ArrayList<SoundContent>();
         ArrayList<Playlist> myCollectionPlaylists = new ArrayList<Playlist>();
         ArrayList<Artist> myCollectionArtists = new ArrayList<Artist>();
 
         myCollection = new MyCollection(myCollectionTracks, myCollectionPlaylists, myCollectionArtists);
     }
+
+    void addSoundContentToMyCollection(SoundContent soundContent) {
+        myCollection.addSoundContent(soundContent);
+    }
+
+    ;
+
+    void addPlaylistToMyCollection(Playlist playlist) {
+        myCollection.addPlaylist(playlist);
+    }
+
+    ;
+
+    void addSoundContentToMyCollection(Artist artist) {
+        myCollection.addArtist(artist);
+    }
+
+    ;
 
     public String getName() {
         return Name;
