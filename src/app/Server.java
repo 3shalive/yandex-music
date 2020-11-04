@@ -1,11 +1,11 @@
 package app;
 
 import classes.*;
-import interfaces.IServer;
+import interfaces.*;
 
 import java.util.ArrayList;
 
-public class Server implements IServer {
+public class Server implements IServer, ICreateService, IReadService, IUpdateService, IDeleteService {
     private ArrayList<SoundContent> soundContents = new ArrayList<SoundContent>();
     private ArrayList<Artist> artists = new ArrayList<Artist>();
     private ArrayList<Playlist> playlists = new ArrayList<Playlist>();
@@ -51,5 +51,89 @@ public class Server implements IServer {
     @Override
     public ArrayList<SoundContent> getSoundContents() {
         return soundContents;
+    }
+
+    /*
+        Create
+     */
+    @Override
+    public SoundContent createSoundContent() {
+        return null;
+    }
+
+    @Override
+    public Playlist createPlaylist() {
+        return null;
+    }
+
+    @Override
+    public Artist createArtist() {
+        return null;
+    }
+
+    /*
+       delete
+    */
+    @Override
+    public Boolean deletePlaylistById(int id) {
+        return null;
+    }
+
+    @Override
+    public Boolean deleteArtisById(int id) {
+        return null;
+    }
+
+    @Override
+    public Boolean deleteAlbomById(int id) {
+        return null;
+    }
+
+    @Override
+    public Boolean deleteSoundContentById(int id) {
+        return null;
+    }
+
+    /*
+       Read
+    */
+    @Override
+    public SoundContent getSoundContentById(int id) {
+        return null;
+    }
+
+    @Override
+    public ArrayList<Playlist> getAllSoundContent() {
+        return null;
+    }
+
+    @Override
+    public Playlist getPlaylistById(int id) {
+        return null;
+    }
+
+    @Override
+    public Playlist getPlaylistByArtist(Artist artist) {
+        return null;
+    }
+
+    @Override
+    public Playlist getPlaylistByAlbom(Albom albom) {
+        return null;
+    }
+
+    @Override
+    public ArrayList<Playlist> getAllPlaylists() {
+        return null;
+    }
+
+    @Override
+    public Artist getArtistByName(String name) {
+        return null;
+    }
+
+    @Override
+    public ArrayList<Playlist> getAllArtist() {
+        return null;
     }
 }
