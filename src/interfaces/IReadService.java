@@ -9,7 +9,7 @@ import java.util.ArrayList;
 
 public interface IReadService {
     SoundContent getSoundContentById(int id);
-    ArrayList<Playlist> getAllSoundContent();
+    ArrayList<SoundContent> getAllSoundContent();
 
     Playlist getPlaylistById(int id);
     Playlist getPlaylistByArtist(Artist artist);
@@ -17,5 +17,5 @@ public interface IReadService {
     ArrayList<Playlist> getAllPlaylists();
 
     Artist getArtistByName(String name);
-    ArrayList<Playlist> getAllArtist();
+    ArrayList<Artist> getAllArtist();
 }
