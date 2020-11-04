@@ -1,11 +1,7 @@
 package app;
 
 import GUI.CreateArtistForm;
-import classes.Albom;
-import classes.Artist;
-
-
-import java.util.ArrayList;
+import GUI.ShowArtistListWindow;
 
 public class Main {
     public static void main(String[] args) {
@@ -14,5 +10,6 @@ public class Main {
 
         //test GUI
         new CreateArtistForm(server);
+        new ShowArtistListWindow(server);
     }
 }
