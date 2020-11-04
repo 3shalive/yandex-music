@@ -8,18 +8,15 @@ import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-public class CreateArtistForm extends JFrame{
+public class CreateArtistForm extends JFrame {
     private JPanel panel1;
     private JTextField artistNameField;
     private JButton closeButton;
     private JButton createButton;
 
-    public CreateArtistForm(Server server){
+    public CreateArtistForm(Server server) {
         ICreateService createService = server;
 
-        setContentPane(panel1);
-        setVisible(true);
-        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
 
         createButton.addActionListener(new ActionListener() {
             @Override
@@ -39,5 +36,10 @@ public class CreateArtistForm extends JFrame{
                 dispose();
             }
         });
+
+        setContentPane(panel1);
+        setVisible(true);
+        setSize(400, 400);
+        setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
     }
 }
