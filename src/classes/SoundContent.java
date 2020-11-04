@@ -6,7 +6,8 @@ public class SoundContent {
     String time;
     String name;
 
-    public SoundContent(Artist artist, String time, String name) {
+    public SoundContent(int id, Artist artist, String time, String name) {
+        this.id = id;
         this.artist = artist;
         this.time = time;
         this.name = name;
@@ -34,5 +35,9 @@ public class SoundContent {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getId() {
+        return id;
     }
 }

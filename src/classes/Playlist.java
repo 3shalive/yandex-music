@@ -5,11 +5,13 @@ import interfaces.ISharable;
 import java.util.ArrayList;
 
 public class Playlist implements ISharable {
+    int id;
     ArrayList<SoundContent> soundContents;
     Boolean isPrivate;
     Albom albom;
 
-    public Playlist(ArrayList<SoundContent> soundContents, Albom albom) {
+    public Playlist(int id, ArrayList<SoundContent> soundContents, Albom albom) {
+        this.id = id;
         this.soundContents = soundContents;
         this.albom = albom;
     }
@@ -37,5 +39,9 @@ public class Playlist implements ISharable {
 
     public ArrayList<SoundContent> getSoundContents() {
         return soundContents;
+    }
+
+    public int getId() {
+        return id;
     }
 }

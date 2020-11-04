@@ -4,12 +4,13 @@ import java.util.ArrayList;
 
 public class Artist {
     int id;
-    String name;
     int likes;
+    String name;
     ArrayList<Albom> alboms;
     ArrayList<UpcomingConcert> upcomingConcerts;
 
-    public Artist(String name) {
+    public Artist(int id, String name) {
+        this.id = id;
         this.name = name;
         this.likes = 0;
         this.alboms = new ArrayList<Albom>();
@@ -46,5 +47,9 @@ public class Artist {
 
     public void setUpcomingConcerts(ArrayList<UpcomingConcert> upcomingConcerts) {
         this.upcomingConcerts = upcomingConcerts;
+    }
+
+    public int getId() {
+        return id;
     }
 }

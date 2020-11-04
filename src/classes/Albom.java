@@ -5,11 +5,18 @@ public class Albom {
     String name;
     String year;
     String genre;
+    Artist artist;
 
-    public Albom(String name, String year, String genre) {
+    public Albom(int id, String name, String year, String genre, Artist artist) {
+        this.id = id;
         this.name = name;
         this.year = year;
         this.genre = genre;
+        this.artist = artist;
+    }
+
+    public Artist getArtist() {
+        return artist;
     }
 
     public String getName() {
@@ -34,5 +41,9 @@ public class Albom {
 
     public void setGenre(String genre) {
         this.genre = genre;
+    }
+
+    public int getId() {
+        return id;
     }
 }
