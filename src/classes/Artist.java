@@ -3,6 +3,7 @@ package classes;
 import java.util.ArrayList;
 
 public class Artist {
+    int id;
     String name;
     int likes;
     ArrayList<Albom> alboms;

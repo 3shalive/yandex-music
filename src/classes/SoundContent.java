@@ -1,6 +1,7 @@
 package classes;
 
 public class SoundContent {
+    int id;
     Artist artist;
     String time;
     String name;

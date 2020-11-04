@@ -5,6 +5,7 @@ import interfaces.IPlayer;
 import java.util.ArrayList;
 
 public class Player implements IPlayer {
+    int id;
     ArrayList<SoundContent> soundContents;
     SoundContent currentSoundContent;
 

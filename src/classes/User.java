@@ -3,6 +3,7 @@ package classes;
 import java.util.ArrayList;
 
 public class User {
+    int id;
     private String Name;
     private MyCollection myCollection;
 

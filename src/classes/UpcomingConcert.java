@@ -1,6 +1,7 @@
 package classes;
 
 public class UpcomingConcert {
+    int id;
     String date;
     String place;
     String price;

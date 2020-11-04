@@ -3,6 +3,7 @@ package classes;
 import java.util.ArrayList;
 
 public class MyCollection {
+    int id;
     ArrayList<SoundContent> tracks;
     ArrayList<Playlist> playlists;
     ArrayList<Artist> artists;

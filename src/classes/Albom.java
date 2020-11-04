@@ -1,6 +1,7 @@
 package classes;
 
 public class Albom {
+    int id;
     String name;
     String year;
     String genre;
