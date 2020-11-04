@@ -12,7 +12,7 @@ public class Server implements IServer, ICreateService, IReadService, IUpdateSer
     private ArrayList<Playlist> playlists = new ArrayList<Playlist>();
 
     //Заполняем хранилище фейковыми данными
-    Server() {
+    public Server() {
         init();
     }
 
